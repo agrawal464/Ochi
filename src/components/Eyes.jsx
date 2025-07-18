@@ -24,15 +24,12 @@ const Eyes = () => {
   return (
     <div className='w-full h-screen overflow-hidden flex items-center justify-center relative bg-black'>
 
-      {/* Smaller background image */}
-      <div className='relative w-[60vw] h-[60vh] rounded-2xl overflow-hidden shadow-xl'>
+      <div data-scroll data-scroll-speed="-.8" className='relative w-[60vw] h-[60vh] rounded-2xl overflow-hidden shadow-xl'>
         <img
           src="/images/wp2552710.webp"
           alt="background"
           className="w-full h-full object-cover"
         />
-
-        {/* Eyes container on top of image */}
         <div className='absolute top-1/2 left-1/2 flex gap-20 transform -translate-x-1/2 -translate-y-1/2'>
           {/* Left Eye */}
           <div className='w-[10vw] h-[10vw] flex items-center justify-center rounded-full bg-zinc-100'>
